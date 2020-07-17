@@ -1,0 +1,247 @@
+/* ______________HEADER START___________________ */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Globals */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: gray;
+    font-size: 100%;
+}
+
+header {
+    margin: 0;
+    padding-top: 7px;
+    padding-bottom: 20px;
+    position: relative;
+    width: 100%;
+}
+
+body [role="banner"] {
+    background-image: url(./images/wood.jpg);
+    background-color: #4a3a30;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.flex {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    max-width: 52rem;
+    overflow: auto;
+}
+
+.g1-flex1 {
+    float: left;
+    width: 15%;
+    /* width: 100%; */
+}
+
+.g1-flex1::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.g1-flex1 .site-title {
+    background-image: url(./images/logo.png);
+    position: relative;
+    background-size: 75px 75px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    height: 100px;
+    width: 100px;
+    color: transparent;
+    font-size: 0;
+}
+
+
+.order-block {
+    float: right;
+    position: absolute;
+    top: 20%;
+    right: 20px;
+    padding-top: 4px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 25%;
+    white-space: nowrap;
+    /* display: inline-block; */
+}
+
+.order-block::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.order-button {
+    background-color: #f6ad49;
+    color: white;
+    font-size: 1.07em;
+    font-weight: bold;
+    line-height: 1;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    border: transparent;
+    height: auto;
+}
+
+nav {
+    position: absolute;
+    margin: 0;
+    top: 20%;
+    display: inline-block;
+    width: auto;
+    /* text-align: center; */
+}
+
+.nav-ul li {
+    display: inline-block;
+    padding: 1em 1.5em;
+    color: white;
+    font-weight: 700;
+}
+
+
+/* -------Media Queries Header Start------------------ */
+
+@media screen and (max-width: 808px) {
+
+    .flex .g1-flex1 {
+        float: left;
+        width: 15%;
+        width: 100%;
+        padding: 0 0.875rem;
+    }
+
+    .flex .g1-flex1 .site-title {
+        background-size: 75px 75px;
+        height: 75px;
+        width: 75px;
+    }
+
+    .order-block {
+        top: 11%;
+        right: 10px;
+        width: auto;
+        /* display: inline-block; */
+    }
+
+    .order-button {
+        font-size: 0.8rem;
+        right: 8px;
+    }
+
+    nav {
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    @media screen and (max-width: 575px) {
+        body {
+            font-size: 80%;
+        }
+    }
+}
+
+/* ----------Media Queries Header End------------------ */
+
+/* ______________HEADER END_____________________ */
