@@ -1,0 +1,5 @@
+Created By: Sushovan Adhikari
+
+The file is created for master as I had already started working on the file without setting a git repo.
+
+Gonna merge the files to the master as soon as the project(to the point I feel) is done. 
